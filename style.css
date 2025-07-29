@@ -7,6 +7,7 @@
 
 a{
     display: inline-block;
+    text-decoration: none;
 }
 
 p{
@@ -50,6 +51,10 @@ body{
 .column{
     padding-right: 15px;
     padding-left: 15px;
+}
+
+.column-25{
+    width: 25%;
 }
 
 .column-33{
@@ -168,6 +173,57 @@ header .container nav a{
     color: red;
     text-decoration: none;
     margin: 0 15px 0 15px;
+}
+
+header .container .bars{
+        display: none;
+    }
+
+/* ===================================
+   FOOTER
+   =================================== */
+
+footer{
+    background-color: black;
+    color: white;
+    padding-top: 60px;
+}
+
+footer p{
+    color: white;
+    margin-bottom: 30px;
+}
+
+footer .footer-bar{
+    background-color: grey;
+    text-align: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+footer ul{
+    padding-left: 0px;
+    list-style: none;
+    margin: 0;
+}
+
+footer ul li{
+    margin-bottom: 10px;
+}
+
+footer .social{
+    font-size: 30px;
+    display: flex;
+}
+
+footer .social a{
+    margin: 0 7.5px;
+}
+
+footer .logo-footer{
+    width: 100%;
 }
 
 /* ===================================
@@ -300,4 +356,95 @@ header .container nav a{
 
 #contactus form .form-block.last-block{
     margin-bottom: 0;
+}
+
+@media(max-width: 767px){
+
+    body{
+        font-size: 15px;
+    }
+    
+    header .container nav{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        padding-right: 15px;
+        padding-left: 15px;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        transition: all 0.4s ease;
+        transform: translateX(100%);
+    }
+
+    header .container nav a{
+        font-size: 40px;
+    }
+        
+    header .container .bars{
+        display: block;
+        font-size: 40px;
+        color: red;
+    }
+
+    footer{
+        text-align: center;
+    }
+
+    footer .logo-footer{
+        width: 50%;
+    }
+
+    footer .social{
+        justify-content: center;
+    }
+
+    form .button.black-button {
+        width: 100%;
+    }
+
+    .container{
+        width: 100%;        
+    }
+
+    .mobile-column-50{
+        width: 50%;
+    }
+
+    .mobile-column-100{
+        width: 100%;
+    }
+
+    .push-mobile-0{
+        margin-left: 0;
+    }
+
+    .sinpadding-mobile{
+        padding: 0;
+    }
+
+    #home{
+        height: 100vh;
+    }
+
+    #home{
+        height: 100%;
+    }
+
+    #services .services-block{
+        margin-bottom: 15px;
+    }
+
+    #contactus iframe{
+        padding: 0;
+    }
+
+    #contactus iframe{
+        position: relative;
+        height: 50;
+    }
 }
