@@ -25,7 +25,8 @@ body{
    =================================== */
 
 .container{
-    width: 1140px;
+    max-width: 1140px;
+    width: 100%;
     margin: 0 auto 0 auto;
     padding-right: 15px;
     padding-left: 15px;
@@ -177,6 +178,7 @@ header .container nav a{
 
 header .container .bars{
         display: none;
+        position: relative;
     }
 
 /* ===================================
@@ -381,6 +383,10 @@ footer .logo-footer{
         transform: translateX(100%);
     }
 
+    header .container nav.open{
+        transform: translateX(0%);
+    }
+
     header .container nav a{
         font-size: 40px;
     }
@@ -389,6 +395,7 @@ footer .logo-footer{
         display: block;
         font-size: 40px;
         color: red;
+        position: relative;
     }
 
     footer{
